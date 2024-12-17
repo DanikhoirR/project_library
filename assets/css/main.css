@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:wght@300;400;500&display=swap");
+
+/*!  SETUP  */
+
+:root {
+
+  /**  Color Styles  */
+  --color-purple: #3d3068;
+  --color-purple-light: #442d90;
+  --color-gray: #798092;
+  --color-gray-light: #e6e6ed;
+  --color-text: #1e2a44;
+  --color-white: #fff;
+
+
+    /**  Font Styles  */
+    --font-header: "Bodoni Moda", serif;
+    --font-text: "Poppins", serif;
+
+    /**  Font Size  */
+    --header-1: 64px;
+    --header-2: 48px
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --font-lg: 18px;
+    --font-m: 16px;
+    --font-sm: 13px; 
+    --font-xs: 8px;
+
+    /**  Font Weight  */
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 100;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--font-text);
+}
+
+/*!  Font  */
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+/*!  Font  */
+.text-capitalize {
+  font-size: var(--font-lg);
+}
+.text-purple {
+  color: var(--color-purple);
+}
+.text-secondary {
+  color: var(--color-gray);
+}
+.text-semi-bold {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.font-size-m {
+  font-size: var(--font-m);
+}
+.font-size-sm {
+  font-size: var(--font-sm);
+}
+.font-size-xs {
+  font-size: var(--font-xs);
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: var(--font-m);
+  font-weight: var(--font-weight-medium);
+}
+
+/**  Button Primary  */
+.btn-primary {
+  background-color: var(--color-purple);
+  border: none;
+}
+
+.btn-primary:focus {
+  background-color: var(--color-purple-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-purple-light);
+}
+
+/**  Button Secondary  */
+.btn-secondary {
+  background-color: var(--color-gray-light);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-secondary:focus {
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
+  color: var(--color-gray);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-white) !important;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05) !important;
+  color: var(--color-gray);
+}
+
+/** UTILITIES  */
+.position-relative {
+  position: relative;
+  top: -50px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+/*!  Navbar  */
+
+.navbar-brand {
+  font-family: var(--font-header);
+  font-size: var(--header-4);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--color-purple);
+  padding-right: 16px;
+}
+
+.navbar {
+  padding: 48px 0;
+}
+
+a.nav-link {
+  font-size: var(--font-m);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text) !important;
+  margin-right: 39px;
+}
+
+/*!  form  */
+.form-control {
+  border-radius: 20px;
+}
+
+.form-control-lg {
+  font-size: 1.50rem;
+}
+
+/*!  Card  */
+.card, .card-img-top, .card-body {
+  border-radius: 0;
+}
+.card-hover:hover {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05) !important;
+}
+
+/*!  Login Page  */
+.box-area {
+  width: 930px;
+}
